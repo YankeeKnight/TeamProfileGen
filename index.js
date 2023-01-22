@@ -1,8 +1,8 @@
 //for page creation
-const generateHTML = require('./src/generateHTML');
+const generateHTML = require('./src/generateHTML').default;
 
 //team profiles
-const Manager = require(',/lib/Manager');
+const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
@@ -70,7 +70,7 @@ const addManager = () => {
             }
         }
     ])
-        .then(nanagerInput => {
+        .then(managerInput => {
             const { name, id, email, officeNumber } = managerInput;
             const manager = new Manager(name, id, email, officeNumber);
 

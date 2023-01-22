@@ -1,5 +1,5 @@
 //employee constructor
-const Employee = require('../lib/Employee');
+const Employee = require('../lib/Employee').default;
 
 //employee object created
 test('creates an employee object', () => {
@@ -21,7 +21,7 @@ test('gets employee name', () => {
 test('gets employee ID', () => {
     const employee = new Employee('Manny', 10, 'manny@manny.com');
 
-    expect(employe.getId()).toEqual(expect.any(Number));
+    expect(employee.getId()).toEqual(expect.any(Number));
 });
 
 //get email
