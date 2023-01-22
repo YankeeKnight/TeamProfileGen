@@ -1,0 +1,68 @@
+body {
+    font: 12px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+
+p {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.margin {
+    margin-bottom: 45px;
+}
+
+.bg-1 {
+    background-color: #F73718;
+    /* Fire Red */
+    color: #ffffff;
+}
+
+.bg-2 {
+    background-color: #F2F4F4;
+    /* Light Gray */
+    color: black;
+}
+
+.bg-3 {
+    background-color: #ffffff;
+    /* White */
+    color: black;
+}
+
+.bg-4 {
+    background-color: #0066FF;
+    /* Blue */
+    color: #fff;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border: 0;
+    border-radius: 5px;
+    margin: 5px 5px 0 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.card {
+    border-color: black;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .5));
+}
+
+.card-body {
+    color: black;
+
+}
