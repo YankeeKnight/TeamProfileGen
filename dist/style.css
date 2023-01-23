@@ -78,3 +78,10 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 576px) {
+    .container {
+        display: block;
+        width: 1000px;
+    }
+}
