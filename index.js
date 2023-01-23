@@ -1,5 +1,5 @@
 //for page creation
-const generateHTML = require('./src/generateHTML').default;
+const generateHTML = require('./src/generateHTML');
 
 //team profiles
 const Manager = require('./lib/Manager');
@@ -150,7 +150,7 @@ const addEmployee = () => {
         },
         {
             type: 'input',
-            name: 'shcool',
+            name: 'school',
             message: "Please enter the Intern's current school name.",
             when: (input) => input.role === "Intern",
             validate: nameInput => {
@@ -165,7 +165,7 @@ const addEmployee = () => {
         {
             type: 'confirm',
             name: 'confirmAddEmployee',
-            message: 'Would you liek to add more team members?',
+            message: 'Would you like to add more team members?',
             defualt: false
         }
     ])
@@ -175,6 +175,11 @@ const addEmployee = () => {
 
             if (role === "Engineer") {
                 employee = new Engineer(name, id, email, github);
+
+                console.log(employee);
+
+            } else if (role === "Intern") {
+                employee = new Intern(name, id, email, school);
 
                 console.log(employee);
             }

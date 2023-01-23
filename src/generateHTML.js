@@ -50,7 +50,7 @@ const generateIntern = function (intern) {
 
             <div class="card-body">
                 <p class="id">ID: ${intern.id}</p>
-                <p class="email">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
+                <p class="email">Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
                 <p class="school">School: ${intern.school}</p>
             </div>
         </div>
@@ -64,7 +64,7 @@ generateHTML = (data) => {
 
     for (let i = 0; i < data.length; i++) {
         const employee = data[i];
-        const role = employee.getRole();
+        let role = employee.getRole();
 
         if (role === 'Manager') {
             const managerCard = generateManager(employee);
@@ -107,7 +107,7 @@ const generateTeamPage = function (employeeCards) {
     <body>
         <header>
             <nav class="navbar navbar-default bg-1">
-                <div class="container">
+                <div>
                     <div class="navbar-header">
                         <h1>My Team<h1>
                     </div>
@@ -124,8 +124,8 @@ const generateTeamPage = function (employeeCards) {
         </main>
 
         <!-- Footer -->
-        <footer class="container-fluid bg-2 text-center text-muted mt-5">
-            <p>Created through a Terminal</a></p>
+        <footer class="container-fluid bg-2 text-center text-muted">
+            <p>Created in the Terminal</a></p>
         </footer>
 
     </body>

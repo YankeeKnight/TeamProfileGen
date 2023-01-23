@@ -1,40 +1,80 @@
+/* To Do:
+    1. responsiveness
+    2. format phone number
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 :root {
     --primary: lightslategray;
-    --secondary: white;
+    --white: white;
+    --blue: #0066FF;
+    --lightGray: #F2F4F4;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font: 12px Montserrat, sans-serif;
+    line-height: 1.8;
 }
 
-#navbar {
-    background-color: var(--primary);
-    color: var(--secondary);
-    font-size: 50px;
+.navbar {
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border: 0;
+    border-radius: 5px;
+    margin: 5px 5px 0 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 5px;
 }
 
-.navbar-brand {
-    font-size: 50px;
+.bg-1 {
+    background-color: #F73718;
+    /* Fire Red */
+    color: #ffffff;
 }
 
+.bg-2 {
+    background-color: #F2F4F4;
+    /* Light Gray */
+    color: black;
+}
+
+.bg-3 {
+    background-color: #ffffff;
+    /* White */
+    color: black;
+}
+
+.bg-4 {
+    background-color: #0066FF;
+    /* Blue */
+    color: #fff;
+}
 
 .card-header {
-    background-color: var(--primary);
-    color: var(--secondary);
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .card-body {
-    background-color: var(--secondary);
-    color: var(--primary);
+    background-color: var(--lightGray);
+}
+
+.card {
+    border-color: black;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .5));
 }
 
 .container {
     margin: 100px auto;
     justify-content: space-evenly;
     display: flex;
-
+    flex-wrap: wrap;
 }
