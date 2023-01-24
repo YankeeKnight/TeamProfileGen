@@ -1,4 +1,4 @@
-# TeamProfileGen
+# Team Profile Generator
 10-Challenge-1_26_23
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)

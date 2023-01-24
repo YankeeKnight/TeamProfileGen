@@ -65,6 +65,10 @@ const addManager = () => {
                     console.log('Please enter an office number.')
                     return false;
                 } else {
+                    const phoneFormat = (officeNumber) => {
+                        officeNumber = officeNumber.toString();
+                        return officeNumber.replace(/(\d{3})(\d{3})(\d{4})/, "$1.$2.$3");
+                    }
                     return true;
                 }
             }
@@ -81,9 +85,9 @@ const addManager = () => {
 
 const addEmployee = () => {
     console.log(`
-    +++++++++++++++++
+    ++++++++++++++++++++++++++++
     Adding employees to the team
-    +++++++++++++++++
+    ++++++++++++++++++++++++++++
     `);
 
     return inquirer.prompt([
