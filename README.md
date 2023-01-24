@@ -7,7 +7,7 @@
 A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
 
 ## Screenshot
-![Screenshot of Process Flow](./)
+![Screenshot of Process Flow](./assets/images/screenshot.png)
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -23,7 +23,7 @@ The user would clone the repository from GitHub and download Node. The applicati
 Using your command line, answer questions about your team and an "index.html" file will be generated and placed in the "dist" directory.
 
 ## Walkthrough
-[Video Walkthrough Link](https://drive.google.com/file/d/1TqdcqAZiYKoB1cH-H8rIOE5n2mF1a7xx/view?usp=share_link)
+[Video Walkthrough Link](https://drive.google.com/file/d/14a8OyqrL1yTz0lcOzibFEf7nHMMMiOzc/view?usp=share_link)
 
 ## Tests
 Run npm test to run Jest for tests on the constructors.
